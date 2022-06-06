@@ -26,7 +26,7 @@ describe("Redmine test", () =>{
     {
         signupPage.signupButton().click();
         signupPage.userLoginInput().type(helper.generateText());
-        var password = helper.generateText();
+        let password = helper.generateText();
         signupPage.userPasswordInput().type(password);
         signupPage.userPasswordConfirmationInput().type(password);
         signupPage.userFirstnameInput().type(helper.generateText());
@@ -44,8 +44,8 @@ describe("Redmine test", () =>{
         signupPage.signupButton().click();
         signupPage.submitButton().click();
         signupPage.checkIsErrorMessageDisplayed();
-        var password = helper.generateText();
-        for (var i=0; i < 10; i++){
+        let password = helper.generateText();
+        for (let i=0; i < 10; i++){
             signupPage.userLoginInput().type(helper.generateText());
             signupPage.userFirstnameInput().type(helper.generateText());
             signupPage.userLastnameInput().type(helper.generateText());
@@ -62,7 +62,7 @@ describe("Redmine test", () =>{
     {
         signupPage.signupButton().click();
         signupPage.userLoginInput().type(helper.generateText());
-        var password = helper.generateShortText();
+        let password = helper.generateShortText();
         signupPage.userPasswordInput().type(password);
         signupPage.userPasswordConfirmationInput().type(password);
         signupPage.userFirstnameInput().type(helper.generateText());
@@ -87,7 +87,7 @@ describe("Redmine test", () =>{
     {
         signupPage.signupButton().click();
         signupPage.userLoginInput().type(helper.generateText());
-        var password = helper.generateText();
+        let password = helper.generateText();
         signupPage.userPasswordInput().type(password);
         signupPage.userPasswordConfirmationInput().type(password);
         signupPage.userFirstnameInput().type(helper.generateText());
