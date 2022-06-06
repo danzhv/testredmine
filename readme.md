@@ -13,4 +13,4 @@ Download or clone a project
 #### Run
 To run test, call `npx cypress open`
 
-In opened window click on test.spec.js
+In opened window click at test.spec.js
